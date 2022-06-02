@@ -17,7 +17,10 @@
       </div>
     </div>
     <div class="h-full w-6/12">
-      <Intro />
+      <Intro v-if="currentPart === PART.intro" />
+      <About v-if="currentPart === PART.about" />
+      <Experience v-if="currentPart === PART.experience" />
+      <Portfolio v-if="currentPart === PART.portfolio" />
     </div>
     <div class="h-full w-2/12">
       <Sidebar />
@@ -29,15 +32,37 @@
 import { mapState } from 'vuex'
 import Links from '~/components/Links.vue'
 import Intro from '~/components/Intro.vue'
+import About from '~/components/About.vue'
+import Experience from '~/components/Experience.vue'
+import Portfolio from '~/components/Portfolio.vue'
 import Sidebar from '~/components/Sidebar.vue'
 import Profile from '~/assets/image/Profile-Source.png'
+
+const PART = {
+  intro: 0,
+  about: 1,
+  experience: 2,
+  portfolio: 3,
+  tutoring: 4,
+  picsee: 5,
+  future: 6,
+  credit: 7
+}
 
 export default {
   name: 'IndexPage',
   components: {
     Links,
+    Sidebar,
     Intro,
-    Sidebar
+    About,
+    Experience,
+    Portfolio
+  },
+  data () {
+    return {
+      PART
+    }
   },
   computed: {
     ...mapState('ui', ['themeDark', 'currentPart']),
