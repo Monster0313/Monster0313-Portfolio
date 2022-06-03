@@ -1,11 +1,14 @@
 <template>
   <div class="navbar w-screen fixed top-0 p-4 flex flex-row justify-between">
     <div class="logo w-fit cursor-pointer">
-      <nuxt-link to="/" class="flex flex-col justify-start min-h-fit max-h-20">
+      <div
+        class="flex flex-col justify-start min-h-fit max-h-20"
+        @click="handlePart"
+      >
         <span class="text-base" :class="themeDark ? 'text-light' : 'text-dark'">Monster0313</span>
         <span class="text-base" :class="themeDark ? 'text-light' : 'text-dark'">Minfeng</span>
         <span class="text-base" :class="themeDark ? 'text-light' : 'text-dark'">The Portfolio</span>
-      </nuxt-link>
+      </div>
     </div>
     <div class="theme flex flex-row items-center ">
       <div class="light mr-2">
@@ -71,6 +74,10 @@ export default {
     updateTheme () {
       this.isDark = !this.isDark
       this.SET_UI({ key: 'themeDark', value: this.isDark })
+    },
+    handlePart () {
+      this.SET_UI({ key: 'currentPart', value: 0 })
+      this.$router.push('/')
     }
   }
 }
