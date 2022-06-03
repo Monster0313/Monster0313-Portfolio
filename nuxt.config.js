@@ -1,3 +1,5 @@
+const ogImage = 'https://i.imgur.com/fLs2y9Y.png'
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -8,7 +10,9 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: '你好，歡迎來到邱旻鋒的個人網站！我是一名前端工程師，主要使用框架為Vue/Nuxt，可以嘗試新的工作機會。' },
+      { hid: 'og:image', property: 'og:image', content: ogImage },
+      { hid: 'og:description', name: 'og:description', content: '你好，歡迎來到邱旻鋒的個人網站！我是一名前端工程師，主要使用框架為Vue/Nuxt，可以嘗試新的工作機會。' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
