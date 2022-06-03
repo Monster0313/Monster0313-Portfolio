@@ -17,7 +17,7 @@
       <a
         :href="url"
         target="_blank"
-        rel="nonoreferrer noopener"
+        rel="noreferrer noopener"
       >
         {{ `專案連結：${url}` }}
       </a>

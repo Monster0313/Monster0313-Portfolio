@@ -21,6 +21,8 @@
       <About v-if="currentPart === PART.about" />
       <Experience v-if="currentPart === PART.experience" />
       <Portfolio v-if="currentPart === PART.portfolio" />
+      <Future v-if="currentPart === PART.future" />
+      <Credit v-if="currentPart === PART.credit" />
     </div>
     <div class="h-full w-2/12">
       <Sidebar />
@@ -35,6 +37,8 @@ import Intro from '~/components/Intro.vue'
 import About from '~/components/About.vue'
 import Experience from '~/components/Experience.vue'
 import Portfolio from '~/components/Portfolio.vue'
+import Future from '~/components/Future.vue'
+import Credit from '~/components/Credit.vue'
 import Sidebar from '~/components/Sidebar.vue'
 import Profile from '~/assets/image/Profile-Source.png'
 
@@ -43,10 +47,8 @@ const PART = {
   about: 1,
   experience: 2,
   portfolio: 3,
-  tutoring: 4,
-  picsee: 5,
-  future: 6,
-  credit: 7
+  future: 4,
+  credit: 5
 }
 
 export default {
@@ -57,7 +59,9 @@ export default {
     Intro,
     About,
     Experience,
-    Portfolio
+    Portfolio,
+    Future,
+    Credit
   },
   data () {
     return {
