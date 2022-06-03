@@ -58,6 +58,7 @@ import Maple from '~/assets/video/maple.mp4'
 import Profile from '~/assets/video/profile.mp4'
 import Repos from '~/assets/video/repos.mp4'
 import Ultimo from '~/assets/video/ultimo.mp4'
+// Rename ultimos.png
 
 export default {
   components: {
