@@ -70,6 +70,30 @@ export default {
   },
   computed: {
     ...mapState('ui', ['themeDark', 'currentPart', 'isProjectCard']),
+    aqi: () => Aqi,
+    aqi1: () => Aqi1,
+    aqi2: () => Aqi2,
+    ultimo: () => Ultimo,
+    ultimo1: () => Ultimo1,
+    ultimo2: () => Ultimo2,
+    ultimo3: () => Ultimo3,
+    ultimo4: () => Ultimo4,
+    ultimo5: () => Ultimo5,
+    profile: () => Profile,
+    profile1: () => Profile1,
+    profile2: () => Profile2,
+    repos: () => Repos,
+    repos1: () => Repos1,
+    repos2: () => Repos2,
+    repos3: () => Repos3,
+    repos4: () => Repos4,
+    maple: () => Maple,
+    maple1: () => Maple1,
+    maple2: () => Maple2,
+    maple3: () => Maple3,
+    maple4: () => Maple4,
+    maple5: () => Maple5,
+    maple6: () => Maple6,
     projectList () {
       return [
         {
@@ -79,10 +103,10 @@ export default {
                         並根據數值變化呈現不同樣式，效果如附圖，由於都是第一次嘗試從閱讀 API 文件到實際接上並調整花費了約三天完成。`,
           url: 'https://github.com/Monster0313/Taiwan.AirQualityIndicator.Map',
           images: [
-            Aqi1,
-            Aqi2
+            this.aqi1,
+            this.aqi2
           ],
-          video: Aqi
+          video: this.aqi
         },
         {
           title: '致．不義時光（2019年)',
@@ -91,13 +115,13 @@ export default {
                         而這份專案是初次使用 Node.js 與 Express.js 架設網頁伺服器，並使用 Nginx 作反向代理，在這一年也學到了不少後端概念。`,
           url: 'https://github.com/Monster0313/Ultimostudio-web',
           images: [
-            Ultimo1,
-            Ultimo2,
-            Ultimo3,
-            Ultimo4,
-            Ultimo5
+            this.ultimo1,
+            this.ultimo2,
+            this.ultimo3,
+            this.ultimo4,
+            this.ultimo5
           ],
-          video: Ultimo
+          video: this.ultimo
         },
         {
           title: '舊版個人網站（2020年）',
@@ -106,10 +130,10 @@ export default {
                         自己購入的網域、Cloudflare 提供的 SSL 等資源架設在自家閒置 Linux 主機上透過 Nodemon 穩定運作。`,
           url: 'https://github.com/Monster0313/Monster0313-Profile',
           images: [
-            Profile1,
-            Profile2
+            this.profile1,
+            this.profile2
           ],
-          video: Profile
+          video: this.profile
         },
         {
           title: '取得Github公開Repos（2020年）',
@@ -117,12 +141,12 @@ export default {
                         因為一直以來都蠻好奇如何做出後者的效果，因此選擇了這一項作為事前作業，也在這份專案練習到了 API 傳遞參數等功能。`,
           url: 'https://github.com/Monster0313/Public-Repos-List',
           images: [
-            Repos1,
-            Repos2,
-            Repos3,
-            Repos4
+            this.repos1,
+            this.repos2,
+            this.repos3,
+            this.repos4
           ],
-          video: Repos
+          video: this.repos
         },
         {
           title: '楓之谷名片產生器（2022年）',
@@ -132,14 +156,14 @@ export default {
                         因此下載僅需要將範圍設定到 Component 的部分就完成了，所以做出這個功能僅花費約 30 分鐘即完成。`,
           url: 'https://github.com/Monster0313/maplestory-id-card-generator',
           images: [
-            Maple1,
-            Maple2,
-            Maple3,
-            Maple4,
-            Maple5,
-            Maple6
+            this.maple1,
+            this.maple2,
+            this.maple3,
+            this.maple4,
+            this.maple5,
+            this.maple6
           ],
-          video: Maple
+          video: this.maple
         }
       ]
     }
