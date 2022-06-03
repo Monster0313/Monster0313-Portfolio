@@ -48,16 +48,16 @@ import Repos1 from '~/assets/image/portfolio/repos-1.png'
 import Repos2 from '~/assets/image/portfolio/repos-2.png'
 import Repos3 from '~/assets/image/portfolio/repos-3.png'
 import Repos4 from '~/assets/image/portfolio/repos-4.png'
-// import Ultimo1 from '~/assets/image/portfolio/ultimo-1.png'
-// import Ultimo2 from '~/assets/image/portfolio/ultimo-2.png'
-// import Ultimo3 from '~/assets/image/portfolio/ultimo-3.png'
-// import Ultimo4 from '~/assets/image/portfolio/ultimo-4.png'
-// import Ultimo5 from '~/assets/image/portfolio/ultimo-5.png'
+import Ultimo1 from '~/assets/image/portfolio/ultimo-1.png'
+import Ultimo2 from '~/assets/image/portfolio/ultimo-2.png'
+import Ultimo3 from '~/assets/image/portfolio/ultimo-3.png'
+import Ultimo4 from '~/assets/image/portfolio/ultimo-4.png'
+import Ultimo5 from '~/assets/image/portfolio/ultimo-5.png'
 import Aqi from '~/assets/video/aqi.mp4'
 import Maple from '~/assets/video/maple.mp4'
 import Profile from '~/assets/video/profile.mp4'
 import Repos from '~/assets/video/repos.mp4'
-// import Ultimo from '~/assets/video/ultimo.mp4'
+import Ultimo from '~/assets/video/ultimo.mp4'
 // Rename ultimos.png
 
 export default {
@@ -74,12 +74,12 @@ export default {
     aqi: () => Aqi,
     aqi1: () => Aqi1,
     aqi2: () => Aqi2,
-    // ultimo: () => Ultimo,
-    // ultimo1: () => Ultimo1,
-    // ultimo2: () => Ultimo2,
-    // ultimo3: () => Ultimo3,
-    // ultimo4: () => Ultimo4,
-    // ultimo5: () => Ultimo5,
+    ultimo: () => Ultimo,
+    ultimo1: () => Ultimo1,
+    ultimo2: () => Ultimo2,
+    ultimo3: () => Ultimo3,
+    ultimo4: () => Ultimo4,
+    ultimo5: () => Ultimo5,
     profile: () => Profile,
     profile1: () => Profile1,
     profile2: () => Profile2,
@@ -109,21 +109,21 @@ export default {
           ],
           video: this.aqi
         },
-        // {
-        //   title: '致．不義時光（2019年)',
-        //   description: `這份專案是大三時的畢業專題，主要用途為實體展覽時方便宣傳桌遊（主產品）並介紹我們對於整個故事背後的世界觀與設計脈絡，
-        //                 雖然在這個專案並沒有接到 API ，但在這裡第一次大量使用到了 Vuex ，並加深了對於資料流的概念，也為後續的專案打下基礎。
-        //                 而這份專案是初次使用 Node.js 與 Express.js 架設網頁伺服器，並使用 Nginx 作反向代理，在這一年也學到了不少後端概念。`,
-        //   url: 'https://github.com/Monster0313/Ultimostudio-web',
-        //   images: [
-        //     this.ultimo1,
-        //     this.ultimo2,
-        //     this.ultimo3,
-        //     this.ultimo4,
-        //     this.ultimo5
-        //   ],
-        //   video: this.ultimo
-        // },
+        {
+          title: '致．不義時光（2019年)',
+          description: `這份專案是大三時的畢業專題，主要用途為實體展覽時方便宣傳桌遊（主產品）並介紹我們對於整個故事背後的世界觀與設計脈絡，
+                        雖然在這個專案並沒有接到 API ，但在這裡第一次大量使用到了 Vuex ，並加深了對於資料流的概念，也為後續的專案打下基礎。
+                        而這份專案是初次使用 Node.js 與 Express.js 架設網頁伺服器，並使用 Nginx 作反向代理，在這一年也學到了不少後端概念。`,
+          url: 'https://github.com/Monster0313/Ultimostudio-web',
+          images: [
+            this.ultimo1,
+            this.ultimo2,
+            this.ultimo3,
+            this.ultimo4,
+            this.ultimo5
+          ],
+          video: this.ultimo
+        },
         {
           title: '舊版個人網站（2020年）',
           description: `這份專案是在 2020 年所使用的個人網站，當時的時空背景為即將畢業與即將服役，雖然有目標卻焦慮著自己的能力不足，
